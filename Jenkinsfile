@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Dependencies') {
       steps {
-        powershell 'pip install > requirements.txt'
+        powershell 'pip install -r requirements.txt'
       }
     }
     stage('Run') {
